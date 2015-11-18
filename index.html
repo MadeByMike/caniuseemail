@@ -27,20 +27,22 @@
       padding: 0px 4px;
       border-radius: 0px;
       text-align: center;
-      margin-top: .25em;
+      margin: .25em 0;
     }
     input:focus{
       background: rgba(255, 255, 255, 0.2);
     }
-
+    span{
+      white-space: nowrap;
+    }
     @media screen and (min-width: 600px) {
       form{
         margin: 2em auto;
         padding: 2em 4em;
       }
       input{
-        width: 50%;
-        margin-top: 0;
+        width: 40%;
+        margin: 0;
       }
     }
 
@@ -48,8 +50,8 @@
 </head>
 <body>
   <form action="no.html">
-	  <label>Can I use</lable>
-		<input name="no, no you can't!" autocomplete="off" autofocus="" value="" type="text"> ?
+	  <label>Can I use</label>
+		<input name="no, no you can't!" autocomplete="off" autofocus="" value="" type="text"> <span>in an email client?</span>
   </form>
 </body>
 </html>
