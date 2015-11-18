@@ -8,8 +8,8 @@
       background: #DB5600;
       width: 90%;
       max-width: 1000px;
-      margin: 2em auto;
-      padding: 2em 4em;
+      margin: 1em auto;
+      padding: 1em .5em;
       color: #FFF;
       font-size: 1.75em;
       font-weight: normal;
@@ -23,20 +23,33 @@
       background: transparent none repeat scroll 0% 0%;
       font: inherit;
       color: #FFF;
-      width: 50%;
+      width: 90%;
       padding: 0px 4px;
       border-radius: 0px;
       text-align: center;
+      margin-top: .25em;
     }
     input:focus{
       background: rgba(255, 255, 255, 0.2);
     }
+
+    @media screen and (min-width: 600px) {
+      form{
+        margin: 2em auto;
+        padding: 2em 4em;
+      }
+      input{
+        width: 50%;
+        margin-top: 0;
+      }
+    }
+
   </style>
 </head>
 <body>
   <form action="no.html">
 	  <label>Can I use</lable>
 		<input name="no, no you can't!" autocomplete="off" autofocus="" value="" type="text"> ?
-  </form>  
+  </form>
 </body>
 </html>
